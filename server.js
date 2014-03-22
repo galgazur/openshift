@@ -4,13 +4,13 @@ path = require('path'),
 fs = require('fs');
 url = require('url');
 
-var httpport = 3001;
-var wsport = 3002;
+var httpport = 80;
+var wsport = 443;
 
 
  
 server = http.createServer(requestHandler);
-server.listen(httpport);
+server.listen();
 
 console.log('HTTP Server listening on port ' + server.address().port);
 
